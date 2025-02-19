@@ -20,17 +20,21 @@
             transform: scale(1.05);
         }
         .card-body {
-            padding: 1.5rem;
-            height: 200px;
-        }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        .btn-primary {
-            width: 100%;
-            background-color: rgb(194, 213, 235);
-            color: blue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-text {
+    flex-grow: 1; /* Fills remaining space */
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: rgb(194, 213, 235);
+    color: blue;
+    margin-top: auto; /* Push button to the bottom */
+}
         }
         .btn-primary:hover {
             background-color: rgb(173, 190, 228);
